@@ -1,0 +1,9 @@
+{
+  "name": "convert-links",
+  "version": "1.0.0",
+  "description": "The typical job of converting links in a raw string to the same string but with links detected and converted to HTML `a`.",
+  "main": "index.js",
+  "repository": "git@github.com:Zemke/convert-links.git",
+  "author": "zemke <florian@zemke.io>",
+  "license": "MIT"
+}
