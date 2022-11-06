@@ -1,7 +1,22 @@
 # Convert links
 
-The typical job of converting links in a raw string to the same string but with links detected and converted to HTML `a`.
+Detect and convert links and email addresses to HTML hyperlinks sanely.
 
-For usage see `test.js`. \
-The second to the exported function is an array of classes you wish to be added to the `a` element.
+```js
+convertLinks("The greatest page in the world is http://www.cwtsite.com I swear!")
+// The greatest page in the world is <a href="http://www.cwtsite.com" target="_blank">http://www.cwtsite.com</a> I swear!
+```
+
+Add CSS classes to the link:
+
+```js
+convertLinks("http://www.cwtsite.com", ['with-style'])
+// <a href="http://www.cwtsite.com" target="_blank" class="with-style">http://www.cwtsite.com</a>
+```
+
+## Tests
+
+```
+node test.js
+```
 
